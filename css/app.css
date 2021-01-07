@@ -1,0 +1,120 @@
+@charset "UTF-8";
+html {
+  font-family: sans-serif;
+}
+
+html * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0 0 0 0;
+  background-color: #f0ffff;
+}
+
+.wrapper {
+  margin: 0 auto 0 auto;
+  max-width: 1500px;
+}
+
+/*
+// ヘッダー
+*/
+nav a {
+  margin: auto 0 auto 10px;
+}
+
+nav {
+  /*ulとaタグを横並びにする */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* 重なり順を指定*/
+  z-index: 1;
+  position: fixed;
+  /* ヘッダーの固定 */
+  top: 0px;
+  /* 位置(上0px) */
+  left: 0px;
+  /* 位置(右0px) */
+  width: 100%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  float: left;
+  padding-right: 5px;
+}
+
+.header__main {
+  position: relative;
+}
+
+.main__image {
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+}
+
+.header__main h1 {
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 50px;
+}
+
+.header__main h2 {
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/*
+//メイン
+*/
+.main__about_me {
+  margin-top: 40px;
+}
+
+.main__about_me .main__about_me__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__about_me h2 {
+  text-align: center;
+}
+
+.main__about_me img {
+  margin: 0 50px;
+}
+
+.main__about_me p {
+  margin: 0 10px 0 10px;
+}
+/*# sourceMappingURL=app.css.map */
