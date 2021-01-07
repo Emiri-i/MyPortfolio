@@ -149,6 +149,11 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main__skill__list .skill__item {
@@ -158,17 +163,20 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.5em 1em;
-  margin: 2em 2px;
-  border: solid 3px #6091d3;
-  /*線*/
-  border-radius: 10px;
-  /*角の丸み*/
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+  height: 150px;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  background: #fff8e8;
+  border-left: solid 10px #ffc06e;
 }
 
 .main__skill__list img {
   width: 64px;
   height: 64px;
-  margin: 0 20px;
+  margin: 0 10px 0 20px;
 }
 /*# sourceMappingURL=app.css.map */

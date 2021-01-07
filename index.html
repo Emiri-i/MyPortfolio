@@ -10,13 +10,13 @@
 
 <body>
     <div class="wrapper">
-
+        <!-- ヘッダー -->
         <header>
             <nav>
                 <a href="index.html">Emiri</a>
                 <ul>
                     <li><a href="#about_me">About me</a></li>
-                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="works.html">Works</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -28,7 +28,9 @@
             </div>
         </header>
 
+        <!-- メイン -->
         <main>
+            <!-- about me セクション -->
             <section class="main__about_me" id="about_me">
                 <div class="parent__about_me">
                     <h2>about me</h2>
@@ -43,14 +45,41 @@
                     </p>
                 </div>
             </section>
+
+            <!-- skill セクション -->
             <section class="main__skills" id="skills">
                 <div class="parent__skills">
                     <h2>skills</h2>
                 </div>
-
                 <div class="main__skill__list">
+                    <!-- item1 -->
                     <div class="skill__item">
-                        <!-- item1 -->
+                        <div class="skill__image apex">
+                            <span><img src="img/display.png" alt="display img"></span>
+                        </div>
+                        <div class="skill__body">
+                            <h3>Apex</h3>
+                            <div class="skiill-rating">
+                                <p>★★★★</p>
+                            </div>
+                            <p>使用期間：2年</p>
+                        </div>
+                    </div>
+                    <!-- item2 -->
+                    <div class="skill__item">
+                        <div class="skill__image visualforce">
+                            <span><img src="img/display.png" alt="display img"></span>
+                        </div>
+                        <div class="skill__body">
+                            <h3>Visualforce</h3>
+                            <div class="skiill-rating">
+                                <p>★★★★☆</p>
+                            </div>
+                            <p>使用期間：2年</p>
+                        </div>
+                    </div>
+                    <!-- item3 -->
+                    <div class="skill__item">
                         <div class="skill__image html">
                             <span><img src="img/html-5.svg" alt="html img"></span>
                         </div>
@@ -62,10 +91,10 @@
                             <p>使用期間：3ヵ月</p>
                         </div>
                     </div>
+                    <!-- item4 -->
                     <div class="skill__item">
-                        <!-- item2 -->
                         <div class="skill__image css">
-                            <span><img src="img/html-5.svg" alt="css img"></span>
+                            <span><img src="img/css-3.svg" alt="css img"></span>
                         </div>
                         <div class="skill__body">
                             <h3>CSS3</h3>
@@ -79,7 +108,42 @@
                     <!-- <span><img src="img/work_icon.png" alt="work img"></span>
                     <p>
                         
-                    </p> -->
+                    </p>
+<!-- 
+                    <section class="main__skills" id="skills">
+                        <div class="parent__skills">
+                            <h2>skills</h2>
+                        </div>
+                        !-- skill 1 --
+                        <div class="main__skill__list">
+                            <div class="skill__item">
+                                <div class="skill__image html">
+                                    <span><img src="img/html-5.svg" alt="html img"></span>
+                                </div>
+                                <div class="skill__body">
+                                    <h3>Apex (Java系)</h3>
+                                    <div class="skiill-rating">
+                                        <p>★★★★★</p>
+                                    </div>
+                                    <p>使用期間：2年</p>
+                                </div>
+                            </div>
+                        </div>
+                        !-- skill 2 --
+                        <div class="main__skill__list">
+                            <div class="skill__item">
+                                <div class="skill__image html">
+                                    <span><img src="img/html-5.svg" alt="html img"></span>
+                                </div>
+                                <div class="skill__body">
+                                    <h3>HTML5</h3>
+                                    <div class="skiill-rating">
+                                        <p>★★★☆☆</p>
+                                    </div>
+                                    <p>使用期間：3ヵ月</p>
+                                </div>
+                            </div>
+                        </div> -->
                 </div>
             </section>
         </main>

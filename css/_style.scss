@@ -99,6 +99,7 @@ li {
 /*
 //メイン
 */
+//about me
 .main__about_me {
     margin-top: 40px;
 
@@ -122,9 +123,11 @@ li {
         margin: 0 10px 0 10px;
     }
 }
+
+//skills
+
 .main__skills {
     margin-top: 40px;
-
     .parent__skills {
         text-align: center;
         margin-left: 10px;
@@ -135,25 +138,65 @@ li {
         background: linear-gradient(transparent 60%, #fae438 60%);
     }
 }
+
 .main__skill__list {
     display: flex;
-    
+    justify-content: space-between;
+    flex-wrap: wrap;
+
     .skill__item {
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        //大きさ指定
+        width: 300px;
+        height: 150px;
         //囲み
-        padding: 0.5em 1em;
-        margin: 2em 2px;
-        border: solid 3px #6091d3; /*線*/
-        border-radius: 10px; /*角の丸み*/
-
+        padding: 10px 20px;
+        margin: 10px 20px;
+        background: #fff8e8;
+        border-left: solid 10px #ffc06e;
+        // border-radius: 10px; /*角の丸み*/
     }
     // .skill__image {
-        
+
     // }
     img {
         width: 64px;
         height: 64px;
-        margin: 0 20px;
+        margin: 0 10px 0 20px;
     }
 }
+
+// .main__skills {
+//     margin-top: 40px;
+
+//     .parent__skills {
+//         text-align: center;
+//         margin-left: 10px;
+//         border-top: 3px dotted #3f5170;
+//     }
+//     h2 {
+//         display: inline-block;
+//         background: linear-gradient(transparent 60%, #fae438 60%);
+//     }
+//     .skill__item {
+//         display: flex;
+//         align-items: center;
+//     }
+//     img {
+//         width: 64px;
+//         height: 64px;
+//         margin: 0 50px;
+//     }
+//     .skill__body {
+//         display: flex;
+//         align-items: center;
+//         // margin:0 auto;
+//         text-align: left;
+
+//         h3, p {
+//             padding: 20px;
+//         }
+//     }
+// }
