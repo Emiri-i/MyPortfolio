@@ -1,6 +1,7 @@
 // ページ全体
 html {
     font-family: sans-serif;
+    color: #666666;
 }
 
 html * {
@@ -19,26 +20,26 @@ body {
 
 /*
 // ヘッダー
-*/ 
+*/
 
 //nav
-nav a {
-    margin: auto 0 auto 10px;
-}
 nav {
     /*ulとaタグを横並びにする */
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
 
     /* 重なり順を指定*/
     z-index: 1;
 
-    position: fixed;  /* ヘッダーの固定 */
-    top: 0px;                   /* 位置(上0px) */
-    left: 0px;                  /* 位置(右0px) */
-    width: 100%;               
-    height: 50px;   
-    background : rgba(255, 255, 255, 0.50);           
+    position: fixed; /* ヘッダーの固定 */
+    top: 0px; /* 位置(上0px) */
+    left: 0px; /* 位置(右0px) */
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    a {
+        margin: auto 0 auto 10px;
+    }
 }
 // nav p, nav ul {
 //     display: inline-block;
@@ -48,9 +49,9 @@ ul {
     list-style: none;
 }
 
-li{
+li {
     float: left;
-    padding-right:5px;
+    padding-right: 5px;
 }
 
 //ヘッダー画像
@@ -68,6 +69,7 @@ li{
 
 .header__main h1 {
     text-align: center;
+    color: #191970;
     // 中央寄せstart
     position: absolute;
     top: 25%;
@@ -78,7 +80,6 @@ li{
     width: 100%;
     // // 中央寄せend
     font-size: 50px;
-    
 }
 
 .header__main h2 {
@@ -92,6 +93,7 @@ li{
     padding: 0;
     width: 100%;
     // 中央寄せend
+    color: #191970;
 }
 
 /*
@@ -100,12 +102,18 @@ li{
 .main__about_me {
     margin-top: 40px;
 
-    .main__about_me__inner{
+    .main__about_me__inner {
         display: flex;
         align-items: center;
     }
-    h2{
+    .parent__about_me {
         text-align: center;
+        margin-left: 10px;
+        border-top: 3px dotted #3f5170;
+    }
+    h2 {
+        display: inline-block;
+        background: linear-gradient(transparent 60%, #fae438 60%);
     }
     img {
         margin: 0 50px;
@@ -113,8 +121,39 @@ li{
     p {
         margin: 0 10px 0 10px;
     }
-
 }
+.main__skills {
+    margin-top: 40px;
 
+    .parent__skills {
+        text-align: center;
+        margin-left: 10px;
+        border-top: 3px dotted #3f5170;
+    }
+    h2 {
+        display: inline-block;
+        background: linear-gradient(transparent 60%, #fae438 60%);
+    }
+}
+.main__skill__list {
+    display: flex;
+    
+    .skill__item {
+        display: flex;
+        align-items: center;
+        //囲み
+        padding: 0.5em 1em;
+        margin: 2em 2px;
+        border: solid 3px #6091d3; /*線*/
+        border-radius: 10px; /*角の丸み*/
 
-
+    }
+    // .skill__image {
+        
+    // }
+    img {
+        width: 64px;
+        height: 64px;
+        margin: 0 20px;
+    }
+}

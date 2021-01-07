@@ -1,6 +1,7 @@
 @charset "UTF-8";
 html {
   font-family: sans-serif;
+  color: #666666;
 }
 
 html * {
@@ -21,10 +22,6 @@ body {
 /*
 // ヘッダー
 */
-nav a {
-  margin: auto 0 auto 10px;
-}
-
 nav {
   /*ulとaタグを横並びにする */
   display: -webkit-box;
@@ -44,6 +41,10 @@ nav {
   width: 100%;
   height: 50px;
   background: rgba(255, 255, 255, 0.5);
+}
+
+nav a {
+  margin: auto 0 auto 10px;
 }
 
 ul {
@@ -67,6 +68,7 @@ li {
 
 .header__main h1 {
   text-align: center;
+  color: #191970;
   position: absolute;
   top: 25%;
   left: 50%;
@@ -88,6 +90,7 @@ li {
   margin: 0;
   padding: 0;
   width: 100%;
+  color: #191970;
 }
 
 /*
@@ -106,8 +109,16 @@ li {
           align-items: center;
 }
 
-.main__about_me h2 {
+.main__about_me .parent__about_me {
   text-align: center;
+  margin-left: 10px;
+  border-top: 3px dotted #3f5170;
+}
+
+.main__about_me h2 {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #fae438));
+  background: linear-gradient(transparent 60%, #fae438 60%);
 }
 
 .main__about_me img {
@@ -116,5 +127,48 @@ li {
 
 .main__about_me p {
   margin: 0 10px 0 10px;
+}
+
+.main__skills {
+  margin-top: 40px;
+}
+
+.main__skills .parent__skills {
+  text-align: center;
+  margin-left: 10px;
+  border-top: 3px dotted #3f5170;
+}
+
+.main__skills h2 {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #fae438));
+  background: linear-gradient(transparent 60%, #fae438 60%);
+}
+
+.main__skill__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__skill__list .skill__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5em 1em;
+  margin: 2em 2px;
+  border: solid 3px #6091d3;
+  /*線*/
+  border-radius: 10px;
+  /*角の丸み*/
+}
+
+.main__skill__list img {
+  width: 64px;
+  height: 64px;
+  margin: 0 20px;
 }
 /*# sourceMappingURL=app.css.map */
