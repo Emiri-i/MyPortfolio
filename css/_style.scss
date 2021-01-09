@@ -149,12 +149,14 @@ li {
 
 .main__skill__list {
     display: flex;
+    margin: 0 auto;
     // justify-content: space-between;
     flex-wrap: wrap;
 
     .skill__item {
         display: flex;
         align-items: center;
+        box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);//影
         // justify-content: space-between;
         //大きさ指定
         width: 300px;
@@ -162,8 +164,6 @@ li {
         //囲み
         padding: 10px 10px;
         margin: 10px 20px;
-        background: #fff8e8;
-        border-left: solid 10px #ffc06e;
 
         font-size: 20px;
 
@@ -180,6 +180,34 @@ li {
         }
     }
 
+    //各skill__itemの色指定
+    .apex_lang {
+        background: #a3ffff;
+        border-left: solid 10px #00ffff;    
+    }
+    .visualforce_lang {
+        background: #a3a3ff;
+        border-left: solid 10px #962dff;    
+    }
+    .HTML5_lang {
+        background: #ffa3ff;
+        border-left: solid 10px #ff60ff;    
+    }
+    .css3_lang {
+        background: #a3d1ff;
+        border-left: solid 10px #198cff;    
+    }
+    .Java_lang {
+        background: #ff9393;
+        border-left: solid 10px #ff4747;    
+    }
+    .Javascript_lang {
+        background: #ffffbc;
+        border-left: solid 10px #ffff05;    
+    }
+
+
+    //各言語の画像
     img {
         width: 64px;
         height: 64px;
@@ -188,5 +216,8 @@ li {
     .skill__body p,h3 {
         margin: 3px 8px;
     }
+
+    
+
 
 }

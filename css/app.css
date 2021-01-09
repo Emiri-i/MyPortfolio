@@ -153,6 +153,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -164,12 +165,12 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
   width: 300px;
   height: 150px;
   padding: 10px 10px;
   margin: 10px 20px;
-  background: #fff8e8;
-  border-left: solid 10px #ffc06e;
   font-size: 20px;
 }
 
@@ -182,6 +183,36 @@ li {
 .main__skill__list .skill__item .skill__body {
   text-align: left;
   display: inline-block;
+}
+
+.main__skill__list .apex_lang {
+  background: #a3ffff;
+  border-left: solid 10px #00ffff;
+}
+
+.main__skill__list .visualforce_lang {
+  background: #a3a3ff;
+  border-left: solid 10px #962dff;
+}
+
+.main__skill__list .HTML5_lang {
+  background: #ffa3ff;
+  border-left: solid 10px #ff60ff;
+}
+
+.main__skill__list .css3_lang {
+  background: #a3d1ff;
+  border-left: solid 10px #198cff;
+}
+
+.main__skill__list .Java_lang {
+  background: #ff9393;
+  border-left: solid 10px #ff4747;
+}
+
+.main__skill__list .Javascript_lang {
+  background: #ffffbc;
+  border-left: solid 10px #ffff05;
 }
 
 .main__skill__list img {
