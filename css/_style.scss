@@ -10,13 +10,15 @@ html * {
 
 body {
     margin: 0 0 0 0;
-    background-color: #f0ffff;
+    background-color: #FFFFEF;
 }
 
 .wrapper {
     margin: 0 auto 0 auto;
     max-width: 1500px;
 }
+
+
 
 /*
 // ヘッダー
@@ -27,24 +29,22 @@ nav {
     /*ulとaタグを横並びにする */
     display: flex;
     justify-content: space-between;
+    background-color: #ffc06e;
 
     /* 重なり順を指定*/
     z-index: 1;
 
     position: fixed; /* ヘッダーの固定 */
-    top: 0px; /* 位置(上0px) */
-    left: 0px; /* 位置(右0px) */
+    // top: 0px; /* 位置(上0px) */
+    // left: 0px; /* 位置(右0px) */
     width: 100%;
+    max-width: 1500px;
     height: 50px;
-    background: rgba(255, 255, 255, 0.5);
     a {
         margin: auto 0 auto 10px;
     }
 }
-// nav p, nav ul {
-//     display: inline-block;
-//     margin:0;
-// }
+
 ul {
     list-style: none;
 }
@@ -59,37 +59,42 @@ li {
 .header__main {
     // 中央寄せ
     position: relative;
+    text-align: center;
+    
 }
 
 .main__image {
     width: 100%;
     max-width: 1500px;
     height: auto;
+    box-shadow: 20px 20px 20px 20px white inset;
+    background-color: #FFFFEF;
 }
+
 
 .header__main h1 {
     text-align: center;
     color: #191970;
     // 中央寄せstart
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 0;
     width: 100%;
     // // 中央寄せend
-    font-size: 50px;
+    font-size: 70px;
 }
 
 .header__main h2 {
     // 中央寄せstart
     position: absolute;
     text-align: center;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 0;
+    margin: 10px 0 0 0 ;
     padding: 0;
     width: 100%;
     // 中央寄せend
@@ -101,31 +106,33 @@ li {
 */
 //about me
 .main__about_me {
-    margin-top: 40px;
+    margin: 80px 0;
 
     .main__about_me__inner {
         display: flex;
         align-items: center;
+        margin:10px 20px 10px 20px;
     }
     .parent__about_me {
         text-align: center;
-        margin-left: 10px;
+        // padding-top: 10px;
         border-top: 3px dotted #3f5170;
     }
     h2 {
         display: inline-block;
         background: linear-gradient(transparent 60%, #fae438 60%);
+        font-size: 40px;
     }
     img {
-        margin: 0 50px;
+        margin: 0 100px;
     }
     p {
-        margin: 0 10px 0 10px;
+        margin: 0 30px 0 30px;
+        font-size: 22px;
     }
 }
 
 //skills
-
 .main__skills {
     margin-top: 40px;
     .parent__skills {
@@ -136,67 +143,50 @@ li {
     h2 {
         display: inline-block;
         background: linear-gradient(transparent 60%, #fae438 60%);
+        font-size: 40px;
     }
 }
 
 .main__skill__list {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     flex-wrap: wrap;
 
     .skill__item {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        // justify-content: space-between;
         //大きさ指定
         width: 300px;
         height: 150px;
         //囲み
-        padding: 10px 20px;
+        padding: 10px 10px;
         margin: 10px 20px;
         background: #fff8e8;
         border-left: solid 10px #ffc06e;
-        // border-radius: 10px; /*角の丸み*/
-    }
-    // .skill__image {
 
-    // }
+        font-size: 20px;
+
+        .skill__image{
+            //skill__itemの中身を中央寄せ
+            display: inline-block;
+            padding: 0;
+            margin:0;
+        }
+
+        .skill__body {
+            text-align: left;
+            display: inline-block;
+        }
+    }
+
     img {
         width: 64px;
         height: 64px;
-        margin: 0 10px 0 20px;
+        margin: 0 10px 0 10px;
     }
+    .skill__body p,h3 {
+        margin: 3px 8px;
+    }
+
 }
-
-// .main__skills {
-//     margin-top: 40px;
-
-//     .parent__skills {
-//         text-align: center;
-//         margin-left: 10px;
-//         border-top: 3px dotted #3f5170;
-//     }
-//     h2 {
-//         display: inline-block;
-//         background: linear-gradient(transparent 60%, #fae438 60%);
-//     }
-//     .skill__item {
-//         display: flex;
-//         align-items: center;
-//     }
-//     img {
-//         width: 64px;
-//         height: 64px;
-//         margin: 0 50px;
-//     }
-//     .skill__body {
-//         display: flex;
-//         align-items: center;
-//         // margin:0 auto;
-//         text-align: left;
-
-//         h3, p {
-//             padding: 20px;
-//         }
-//     }
-// }

@@ -11,7 +11,7 @@ html * {
 
 body {
   margin: 0 0 0 0;
-  background-color: #f0ffff;
+  background-color: #FFFFEF;
 }
 
 .wrapper {
@@ -30,17 +30,14 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #ffc06e;
   /* 重なり順を指定*/
   z-index: 1;
   position: fixed;
   /* ヘッダーの固定 */
-  top: 0px;
-  /* 位置(上0px) */
-  left: 0px;
-  /* 位置(右0px) */
   width: 100%;
+  max-width: 1500px;
   height: 50px;
-  background: rgba(255, 255, 255, 0.5);
 }
 
 nav a {
@@ -58,36 +55,40 @@ li {
 
 .header__main {
   position: relative;
+  text-align: center;
 }
 
 .main__image {
   width: 100%;
   max-width: 1500px;
   height: auto;
+  -webkit-box-shadow: 20px 20px 20px 20px white inset;
+          box-shadow: 20px 20px 20px 20px white inset;
+  background-color: #FFFFEF;
 }
 
 .header__main h1 {
   text-align: center;
   color: #191970;
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
   width: 100%;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .header__main h2 {
   position: absolute;
   text-align: center;
-  top: 35%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 0;
   width: 100%;
   color: #191970;
@@ -97,7 +98,7 @@ li {
 //メイン
 */
 .main__about_me {
-  margin-top: 40px;
+  margin: 80px 0;
 }
 
 .main__about_me .main__about_me__inner {
@@ -107,11 +108,11 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 10px 20px 10px 20px;
 }
 
 .main__about_me .parent__about_me {
   text-align: center;
-  margin-left: 10px;
   border-top: 3px dotted #3f5170;
 }
 
@@ -119,14 +120,16 @@ li {
   display: inline-block;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #fae438));
   background: linear-gradient(transparent 60%, #fae438 60%);
+  font-size: 40px;
 }
 
 .main__about_me img {
-  margin: 0 50px;
+  margin: 0 100px;
 }
 
 .main__about_me p {
-  margin: 0 10px 0 10px;
+  margin: 0 30px 0 30px;
+  font-size: 22px;
 }
 
 .main__skills {
@@ -143,15 +146,13 @@ li {
   display: inline-block;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #fae438));
   background: linear-gradient(transparent 60%, #fae438 60%);
+  font-size: 40px;
 }
 
 .main__skill__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -163,20 +164,33 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 300px;
   height: 150px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   margin: 10px 20px;
   background: #fff8e8;
   border-left: solid 10px #ffc06e;
+  font-size: 20px;
+}
+
+.main__skill__list .skill__item .skill__image {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.main__skill__list .skill__item .skill__body {
+  text-align: left;
+  display: inline-block;
 }
 
 .main__skill__list img {
   width: 64px;
   height: 64px;
-  margin: 0 10px 0 20px;
+  margin: 0 10px 0 10px;
+}
+
+.main__skill__list .skill__body p, .main__skill__list h3 {
+  margin: 3px 8px;
 }
 /*# sourceMappingURL=app.css.map */
