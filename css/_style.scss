@@ -35,11 +35,11 @@ nav {
     z-index: 1;
 
     position: fixed; /* ヘッダーの固定 */
-    // top: 0px; /* 位置(上0px) */
-    // left: 0px; /* 位置(右0px) */
     width: 100%;
     max-width: 1500px;
     height: 50px;
+
+    opacity: 0.7;
     a {
         margin: auto 0 auto 10px;
     }
@@ -149,8 +149,7 @@ li {
 
 .main__skill__list {
     display: flex;
-    margin: 0 auto;
-    // justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 
     .skill__item {
