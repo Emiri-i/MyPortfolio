@@ -1,0 +1,110 @@
+/*
+//メイン
+*/
+
+//work
+
+.work {
+    .parent__work {
+        text-align: center;
+        border-top: 3px dotted #3f5170;
+
+        h2 {
+            display: inline-block;
+            background: linear-gradient(transparent 60%, #fae438 60%);
+            font-size: 40px;
+        }
+    }
+
+    .carousel__main__parent {
+        display: flex;
+        justify-content: center;
+
+        .carousel__main {
+            width: 320px;
+            height: 400px;
+            //右左矢印を固定する
+            align-items: center;
+            display: flex;
+            flex-flow: column;
+
+            //囲み
+            background-color: #f4f9ff;
+            border: 1px solid #fae438;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+
+            .active {
+                animation: fadeImg 0.8s;
+            }
+
+            img {
+                width: 300px;
+                height: 300px;
+                margin: 0;
+                border: 1px solid #e8e8e8;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            }
+            p {
+                margin: auto;
+            }
+            .image__explanation {
+                margin-top: 0;
+            }
+        }
+        //左矢印
+        .carousel__prev {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            color: lightgray;
+            margin: 0 30px;
+            &:hover {
+                transition-duration: 0.2s;
+                transform: translateX(-10px);
+            }
+        }
+        //右矢印
+        .carousel__next {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            color: lightgray;
+            margin: 0 30px;
+            &:hover {
+                transition-duration: 0.2s;
+                transform: translateX(10px);
+            }
+        }
+    }
+    .carousel__thumbnails__parent {
+        text-align: center;
+    }
+    .carousel__thumbnails {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        & li {
+            // cursor: pointer;
+            opacity: 0.4;
+            &:hover {
+                opacity: 1;
+            }
+            &.current {
+                opacity: 1;
+            }
+        }
+        & img {
+            width: 80px;
+        }
+    }
+}
+
+@keyframes fadeImg {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

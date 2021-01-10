@@ -43,16 +43,17 @@ nav {
     a {
         margin: auto 0 auto 10px;
     }
+    ul {
+        list-style: none;
+    }
+    
+    li {
+        float: left;
+        padding-right: 5px;
+    }
 }
 
-ul {
-    list-style: none;
-}
 
-li {
-    float: left;
-    padding-right: 5px;
-}
 
 //ヘッダー画像
 
@@ -134,10 +135,10 @@ li {
 
 //skills
 .main__skills {
-    margin-top: 40px;
+    margin: 40px 0 80px 0;
     .parent__skills {
         text-align: center;
-        margin-left: 10px;
+        // margin-left: 10px;
         border-top: 3px dotted #3f5170;
     }
     h2 {

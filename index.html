@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emiri Ishikawa</title>
     <link rel="stylesheet" href="css/app.css">
+    <script src="https://kit.fontawesome.com/4d60fe16e7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -135,17 +136,26 @@
 
             <!-- work セクション -->
             <section class="work" id="work">
-                <div>
-                    <div class="carousel__main"><img id="carousel__main"></div>
-                    <div id="carousel__prev" class="carousel__prev"><i class="fas fa-angle-left fa-5x"></i></div>
-                    <div id="carousel__next" class="carousel__next"><i class="fas fa-angle-right fa-5x"></i></div>
-                    <ul class="carousel__thumbnails"></ul>
+                <div class="parent__work">
+                    <h2>work</h2>
+                </div>
+                <div class="carousel">
+                    <div class="carousel__main__parent">
+                        <div id="carousel__prev" class="carousel__prev"><i class="fas fa-angle-left fa-5x"></i></div>
+                        <div class="carousel__main"><p><img id="carousel__main"></p></div>
+                        <div id="carousel__next" class="carousel__next"><i class="fas fa-angle-right fa-5x"></i></div>
+                    </div>
+                    <div class="carousel__thumbnails__parent">
+                        <ul class="carousel__thumbnails"></ul>
+                    </div>
                 </div>
 
             </section>
         </main>
         <footer></footer>
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
