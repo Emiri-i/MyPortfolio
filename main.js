@@ -13,7 +13,7 @@ const images = [
 // ];
 const textArray = [
     ['my portfolio', 'https://emiri-i.github.io/MyPortfolio'],
-    ['website reproduction','https://emiri-i.github.io/MyPortfolio'],
+    ['website reproduction','https://emiri-i.github.io/cafe-page-sample'],
     ['quiz application','https://emiri-i.github.io/sampleQuiz']
 ];
 
