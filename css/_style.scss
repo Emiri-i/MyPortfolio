@@ -315,6 +315,7 @@ nav {
 
 //contact
 .contact {
+    
     margin-bottom: 40px;
     text-align: center;
     .parent__contact {
@@ -333,6 +334,17 @@ nav {
     .contact__inner__p {
         margin-top: 0;
     }
+    a:link,
+    a:visited {
+        color: #666666;
+    }
+
+    a:hover {
+        color: #8ea084;
+        border-bottom: 3px solid #d1eac4;
+        text-decoration: none;
+    }
+    
 }
 
 /*

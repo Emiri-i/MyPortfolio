@@ -354,6 +354,17 @@ nav a:hover {
   margin-top: 0;
 }
 
+.contact a:link,
+.contact a:visited {
+  color: #666666;
+}
+
+.contact a:hover {
+  color: #8ea084;
+  border-bottom: 3px solid #d1eac4;
+  text-decoration: none;
+}
+
 /*
 //フッター
 */
