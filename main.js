@@ -12,9 +12,9 @@ const images = [
 //     'quiz application'
 // ];
 const textArray = [
-    ['my portfolio', 'https://github.com/Emiri-i/MyPortfolio'],
-    ['website reproduction','https://github.com/Emiri-i/cafe-page-sample'],
-    ['quiz application','https://github.com/Emiri-i/sampleQuiz']
+    ['my portfolio', 'https://emiri-i.github.io/MyPortfolio'],
+    ['website reproduction','https://emiri-i.github.io/MyPortfolio'],
+    ['quiz application','https://emiri-i.github.io/sampleQuiz']
 ];
 
 
