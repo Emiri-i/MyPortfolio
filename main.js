@@ -6,26 +6,26 @@ const images = [
     'img/kujira_cafe_image.png',
     'img/game_quiz_app_image.png'
 ];
-const textArray = [
-    'my portfolio',
-    'website reproduction',
-    'quiz application'
-];
-// const text = [
-//     ['my portfolio', 'https://github.com/Emiri-i/MyPortfolio'],
-//     ['website reproduction','https://github.com/Emiri-i/cafe-page-sample'],
-//     ['quiz application','https://github.com/Emiri-i/sampleQuiz']
+// const textArray = [
+//     'my portfolio',
+//     'website reproduction',
+//     'quiz application'
 // ];
+const textArray = [
+    ['my portfolio', 'https://github.com/Emiri-i/MyPortfolio'],
+    ['website reproduction','https://github.com/Emiri-i/cafe-page-sample'],
+    ['quiz application','https://github.com/Emiri-i/sampleQuiz']
+];
 
 
 
 let currentIndex = 0;
 const mainImage = document.getElementById('carousel__main');
-console.log(mainImage);
+// console.log(mainImage);
 mainImage.src = images[currentIndex];
 
 for (let [index, image] of images.entries()) {
-    console.log(index, image);
+    // console.log(index, image);
 
     //imgタグを作成
     const img = document.createElement('img');
@@ -33,23 +33,36 @@ for (let [index, image] of images.entries()) {
 
     //pタグを作成（画像の説明）
     if (index === currentIndex) {
+
+        //画像の下の文章
         const p = document.createElement('p');
-        p.textContent = textArray[index];
+        p.textContent = textArray[index][0];
+        
+        // //カード全体をリンクにする
+        // const a = document.createElement('a');
+        // a.href  = textArray[index][1];
+
+        console.log(index,currentIndex);
         p.classList.add('image__explanation');
-        //作成したタグを表示
+
+        // //作成したaタグを表示
+        // document.querySelector('.carousel__main').appendChild(a);
+        //作成したpタグを表示
         document.querySelector('.carousel__main').appendChild(p);
+
         // const parent = document.querySelector('.carousel__main__parent');
 
         // const parentEl = document.querySelector('.carousel__main');
         // const reference = document.querySelector('.carousel__next');
         // parentEl.insertBefore(p, reference);
+
     }
 
 
     //liタグを作成
     const li = document.createElement('li');
     if (index === currentIndex) {
-        li.classList.add('active');
+        li.classList.add('current');
     }
 
     //liタグ内の画像がクリックされたら、メインイメージのソースを変更、activeに変更する
@@ -64,7 +77,12 @@ for (let [index, image] of images.entries()) {
         const thumbnails = document.querySelectorAll('.carousel__thumbnails > li');
         thumbnails[currentIndex].classList.remove('current');
         currentIndex = index;
+        // console.log(index,currentIndex);
         thumbnails[currentIndex].classList.add('current');
+
+        //.image__explanationのtextContentを取得して、挿入する
+        const p = document.querySelector('.image__explanation');
+        p.textContent = textArray[index][0];
     });
 
     li.appendChild(img);
@@ -90,5 +108,14 @@ prev.addEventListener('click', () => {
     }
     document.querySelectorAll('.carousel__thumbnails > li')[target].click();
 });
+
+//カード全体をクリックしたときにGitページに遷移する
+const carouselMain = document.getElementById('carousel__main');
+carouselMain.addEventListener('click', () => {
+    const href  = textArray[currentIndex][1];
+    console.log(textArray[currentIndex][1]);
+    window.open(href);
+});
+
 
 

@@ -19,6 +19,7 @@
     .carousel__main__parent {
         display: flex;
         justify-content: center;
+        
 
         .carousel__main {
             width: 320px;
@@ -32,6 +33,18 @@
             background-color: #f4f9ff;
             border: 1px solid #fae438;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+
+            // //カード全体をリンクにする
+            // position: relative;
+
+            // //カード全体をリンクにする
+            // a {
+            //     position: absolute;
+            //     // top: 0;
+            //     // left: 0;
+            //     height:100%;
+            //     width: 100%;
+            // }
 
             .active {
                 animation: fadeImg 0.8s;
