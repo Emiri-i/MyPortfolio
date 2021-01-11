@@ -11,7 +11,7 @@ html * {
 
 body {
   margin: 0 0 0 0;
-  background-color: #FFFFEF;
+  background-color: #ffffef;
 }
 
 .wrapper {
@@ -54,6 +54,17 @@ nav li {
   padding-right: 5px;
 }
 
+nav a:link,
+nav a:visited {
+  color: #666666;
+}
+
+nav a:hover {
+  color: #8ea084;
+  border-bottom: 3px solid #d1eac4;
+  text-decoration: none;
+}
+
 .header__main {
   position: relative;
   text-align: center;
@@ -65,7 +76,7 @@ nav li {
   height: auto;
   -webkit-box-shadow: 20px 20px 20px 20px white inset;
           box-shadow: 20px 20px 20px 20px white inset;
-  background-color: #FFFFEF;
+  background-color: #ffffef;
 }
 
 .header__main h1 {
@@ -142,11 +153,27 @@ nav li {
   border-top: 3px dotted #3f5170;
 }
 
-.main__skills h2 {
+.main__skills .parent__skills h2 {
   display: inline-block;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #fae438));
   background: linear-gradient(transparent 60%, #fae438 60%);
   font-size: 40px;
+}
+
+.main__skills .main__skill__list__title {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.main__skills .main__skill__list__title h2 {
+  padding: 5px 15px;
+  margin: 0 0 10px 0;
+  display: inline-block;
+  -webkit-box-shadow: 0px 0px 0px 10px #ffeddb;
+          box-shadow: 0px 0px 0px 10px #ffeddb;
+  border: dashed 2px white;
+  background: #ffeddb;
 }
 
 .main__skill__list {
@@ -188,33 +215,33 @@ nav li {
 }
 
 .main__skill__list .apex_lang {
-  background: #a3ffff;
-  border-left: solid 10px #00ffff;
+  background: #d1ffff;
+  border-left: solid 10px #a3ffff;
 }
 
 .main__skill__list .visualforce_lang {
-  background: #a3a3ff;
-  border-left: solid 10px #962dff;
+  background: #c6c6ff;
+  border-left: solid 10px #a3a3ff;
 }
 
 .main__skill__list .HTML5_lang {
-  background: #ffa3ff;
-  border-left: solid 10px #ff60ff;
+  background: #ffccff;
+  border-left: solid 10px #ffa3ff;
 }
 
 .main__skill__list .css3_lang {
-  background: #a3d1ff;
-  border-left: solid 10px #198cff;
+  background: #cce5ff;
+  border-left: solid 10px #a3d1ff;
 }
 
 .main__skill__list .Java_lang {
-  background: #ff9393;
-  border-left: solid 10px #ff4747;
+  background: #ffd1d1;
+  border-left: solid 10px #ff9e9e;
 }
 
 .main__skill__list .Javascript_lang {
-  background: #ffffbc;
-  border-left: solid 10px #ffff05;
+  background: #ffffd6;
+  border-left: solid 10px #ffffb2;
 }
 
 .main__skill__list img {
@@ -223,13 +250,80 @@ nav li {
   margin: 0 10px 0 10px;
 }
 
-.main__skill__list .skill__body p, .main__skill__list h3 {
+.main__skill__list .skill__body p,
+.main__skill__list h3 {
   margin: 3px 8px;
+}
+
+.contact {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact .parent__contact {
+  border-top: 3px dotted #3f5170;
+}
+
+.contact h2 {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #fae438));
+  background: linear-gradient(transparent 60%, #fae438 60%);
+  font-size: 40px;
+}
+
+.contact p {
+  font-size: 20px;
+}
+
+.contact .contact__inner__p {
+  margin-top: 0;
+}
+
+/*
+//フッター
+*/
+.footer {
+  background-color: #ffc06e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 1500px;
+  height: 50px;
+  opacity: 0.7;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.footer ul a:link,
+.footer ul a:visited {
+  color: #666666;
+}
+
+.footer ul a:hover {
+  color: #8ea084;
+  border-bottom: 3px solid #d1eac4;
+  text-decoration: none;
 }
 
 /*
 //メイン
 */
+.work {
+  margin: 40px 0 80px 0;
+}
+
 .work .parent__work {
   text-align: center;
   border-top: 3px dotted #3f5170;

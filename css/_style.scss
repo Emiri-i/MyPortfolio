@@ -10,15 +10,13 @@ html * {
 
 body {
     margin: 0 0 0 0;
-    background-color: #FFFFEF;
+    background-color: #ffffef;
 }
 
 .wrapper {
     margin: 0 auto 0 auto;
     max-width: 1500px;
 }
-
-
 
 /*
 // ヘッダー
@@ -46,14 +44,23 @@ nav {
     ul {
         list-style: none;
     }
-    
+
     li {
         float: left;
         padding-right: 5px;
     }
+
+    a:link,
+    a:visited {
+        color: #666666;
+    }
+
+    a:hover {
+        color: #8ea084;
+        border-bottom: 3px solid #d1eac4;
+        text-decoration: none;
+    }
 }
-
-
 
 //ヘッダー画像
 
@@ -61,7 +68,6 @@ nav {
     // 中央寄せ
     position: relative;
     text-align: center;
-    
 }
 
 .main__image {
@@ -69,9 +75,8 @@ nav {
     max-width: 1500px;
     height: auto;
     box-shadow: 20px 20px 20px 20px white inset;
-    background-color: #FFFFEF;
+    background-color: #ffffef;
 }
-
 
 .header__main h1 {
     text-align: center;
@@ -95,7 +100,7 @@ nav {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 10px 0 0 0 ;
+    margin: 10px 0 0 0;
     padding: 0;
     width: 100%;
     // 中央寄せend
@@ -112,7 +117,7 @@ nav {
     .main__about_me__inner {
         display: flex;
         align-items: center;
-        margin:10px 20px 10px 20px;
+        margin: 10px 20px 10px 20px;
     }
     .parent__about_me {
         text-align: center;
@@ -140,11 +145,26 @@ nav {
         text-align: center;
         // margin-left: 10px;
         border-top: 3px dotted #3f5170;
+        h2 {
+            display: inline-block;
+            background: linear-gradient(transparent 60%, #fae438 60%);
+            font-size: 40px;
+        }
     }
-    h2 {
-        display: inline-block;
-        background: linear-gradient(transparent 60%, #fae438 60%);
-        font-size: 40px;
+    .main__skill__list__title {
+        font-size: 20px;
+        text-align: center;
+        margin: 10px auto;
+
+        h2 {
+            padding: 5px 15px;
+            margin: 0 0 10px 0;
+            display: inline-block;
+
+            box-shadow: 0px 0px 0px 10px #ffeddb;
+            border: dashed 2px white;
+            background: #ffeddb;
+        }
     }
 }
 
@@ -156,7 +176,7 @@ nav {
     .skill__item {
         display: flex;
         align-items: center;
-        box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);//影
+        box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32); //影
         // justify-content: space-between;
         //大きさ指定
         width: 300px;
@@ -167,11 +187,11 @@ nav {
 
         font-size: 20px;
 
-        .skill__image{
+        .skill__image {
             //skill__itemの中身を中央寄せ
             display: inline-block;
             padding: 0;
-            margin:0;
+            margin: 0;
         }
 
         .skill__body {
@@ -182,30 +202,29 @@ nav {
 
     //各skill__itemの色指定
     .apex_lang {
-        background: #a3ffff;
-        border-left: solid 10px #00ffff;    
+        background: #d1ffff;
+        border-left: solid 10px #a3ffff;
     }
     .visualforce_lang {
-        background: #a3a3ff;
-        border-left: solid 10px #962dff;    
+        background: #c6c6ff;
+        border-left: solid 10px #a3a3ff;
     }
     .HTML5_lang {
-        background: #ffa3ff;
-        border-left: solid 10px #ff60ff;    
+        background: #ffccff;
+        border-left: solid 10px #ffa3ff;
     }
     .css3_lang {
-        background: #a3d1ff;
-        border-left: solid 10px #198cff;    
+        background: #cce5ff;
+        border-left: solid 10px #a3d1ff;
     }
     .Java_lang {
-        background: #ff9393;
-        border-left: solid 10px #ff4747;    
+        background: #ffd1d1;
+        border-left: solid 10px #ff9e9e;
     }
     .Javascript_lang {
-        background: #ffffbc;
-        border-left: solid 10px #ffff05;    
+        background: #ffffd6;
+        border-left: solid 10px #ffffb2;
     }
-
 
     //各言語の画像
     img {
@@ -213,15 +232,68 @@ nav {
         height: 64px;
         margin: 0 10px 0 10px;
     }
-    .skill__body p,h3 {
+    .skill__body p,
+    h3 {
         margin: 3px 8px;
     }
+}
 
+//workは別stylesheetにて記載
 
-//workは
+//contact
+.contact {
+    margin-bottom: 40px;
+    text-align: center;
+    .parent__contact {
+        // text-align: center;
+        // margin-left: 10px;
+        border-top: 3px dotted #3f5170;
+    }
+    h2 {
+        display: inline-block;
+        background: linear-gradient(transparent 60%, #fae438 60%);
+        font-size: 40px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .contact__inner__p {
+        margin-top: 0;
+    }
+}
 
-//about me
-    
+/*
+//フッター
+*/
+.footer {
+    background-color: #ffc06e;
 
+    //ul要素を中央寄せ
+    display: flex;
+    justify-content: center;
 
+    width: 100%;
+    max-width: 1500px;
+    height: 50px;
+
+    opacity: 0.7;
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+        a:link,
+        a:visited {
+            color: #666666;
+        }
+
+        a:hover {
+            color: #8ea084;
+            border-bottom: 3px solid #d1eac4;
+            text-decoration: none;
+        }
+    }
 }
