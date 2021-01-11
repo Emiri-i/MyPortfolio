@@ -151,7 +151,7 @@ nav {
             font-size: 40px;
         }
     }
-    .main__skill__list__title {
+    .main__skill__list__lang {
         font-size: 20px;
         text-align: center;
         margin: 10px auto;
@@ -233,6 +233,79 @@ nav {
         margin: 0 10px 0 10px;
     }
     .skill__body p,
+    h3 {
+        margin: 3px 8px;
+    }
+}
+
+//tools
+//タイトル
+.main__skill__list__tools {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px auto;
+
+    h2 {
+        padding: 5px 15px;
+        margin: 20px 0 10px 0;
+        display: inline-block;
+
+        box-shadow: 0px 0px 0px 10px #ffeddb;
+        border: dashed 2px white;
+        background: #ffeddb;
+    }
+}
+
+//各item
+.main__tool__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .main__tool__item {
+        display: flex;
+        align-items: center;
+        box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32); //影
+        // justify-content: space-between;
+        //大きさ指定
+        width: 300px;
+        height: 150px;
+        //囲み
+        padding: 10px 10px;
+        margin: 10px 20px;
+
+        font-size: 20px;
+
+        .main__tool__image {
+            //skill__itemの中身を中央寄せ
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main__tool__body {
+            text-align: left;
+            display: inline-block;
+        }
+    }
+
+    .visual_studio_code__tool {
+        background: #d1ffe8;
+        border-top: solid 10px #b2ffd8;
+    }
+
+    .GitHub__tool {
+        background: #d6d6ff;
+        border-top: solid 10px #c1c1ff;
+    }
+
+    //各toolの画像
+    img {
+        width: 64px;
+        height: 64px;
+        margin: 0 10px 0 10px;
+    }
+    .main__tool__body p,
     h3 {
         margin: 3px 8px;
     }
