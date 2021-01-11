@@ -6,11 +6,6 @@ const images = [
     'img/kujira_cafe_image.png',
     'img/game_quiz_app_image.png'
 ];
-// const textArray = [
-//     'my portfolio',
-//     'website reproduction',
-//     'quiz application'
-// ];
 const textArray = [
     ['my portfolio', 'https://emiri-i.github.io/MyPortfolio'],
     ['website reproduction','https://emiri-i.github.io/cafe-page-sample'],
@@ -21,11 +16,9 @@ const textArray = [
 
 let currentIndex = 0;
 const mainImage = document.getElementById('carousel__main');
-// console.log(mainImage);
 mainImage.src = images[currentIndex];
 
 for (let [index, image] of images.entries()) {
-    // console.log(index, image);
 
     //imgタグを作成
     const img = document.createElement('img');
@@ -42,19 +35,12 @@ for (let [index, image] of images.entries()) {
         // const a = document.createElement('a');
         // a.href  = textArray[index][1];
 
-        console.log(index,currentIndex);
         p.classList.add('image__explanation');
 
         // //作成したaタグを表示
         // document.querySelector('.carousel__main').appendChild(a);
         //作成したpタグを表示
         document.querySelector('.carousel__main').appendChild(p);
-
-        // const parent = document.querySelector('.carousel__main__parent');
-
-        // const parentEl = document.querySelector('.carousel__main');
-        // const reference = document.querySelector('.carousel__next');
-        // parentEl.insertBefore(p, reference);
 
     }
 
@@ -77,7 +63,6 @@ for (let [index, image] of images.entries()) {
         const thumbnails = document.querySelectorAll('.carousel__thumbnails > li');
         thumbnails[currentIndex].classList.remove('current');
         currentIndex = index;
-        // console.log(index,currentIndex);
         thumbnails[currentIndex].classList.add('current');
 
         //.image__explanationのtextContentを取得して、挿入する
